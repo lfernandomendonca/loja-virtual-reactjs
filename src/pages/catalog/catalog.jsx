@@ -8,7 +8,7 @@ const Catalog = () => {
         marginTop: '10px',
         paddingLeft: '32px',
         paddingRight: '32px',
-        boxSizing: 'border-box'
+        boxSizing: 'border-box' 
     }}>
         {
             Object.keys(products).map(id => {

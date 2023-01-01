@@ -6,6 +6,7 @@ import { AppBar, IconButton, Toolbar, Typography } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import LogoutIcon from "@mui/icons-material/Logout";
 
+
 const Login = lazy(() => import("./pages/login/login"));
 const Register = lazy(() => import("./pages/register/register"));
 const Catalog = lazy(() => import("./pages/catalog/catalog"));
@@ -21,14 +22,14 @@ function App() {
 
   return (
     <Router>
-      <AppBar position={"static"}>
+      <AppBar position={"sticky"}>
         <Toolbar
           style={{
             justifyContent: "space-between",
           }}
         >
           <Typography variant="h6" component="h2">
-            <Link to="/catalog">Loja virtual</Link>
+            <Link to="/catalog">Cool Poke Store</Link>
           </Typography>
           <div>
             <IconButton edge="end">
